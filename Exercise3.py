@@ -39,8 +39,9 @@ for choice in l:
 
      if(user1=="D"):
       if(lv==1):points+=10000
-      elif(lv==2):points+=20000
-      elif(lv==3):points+-30000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
          
       lv+=1   
       print("\nLEVEL=",lv)
@@ -66,8 +67,9 @@ for choice in l:
 
      if(user2=="B"):
       if(lv==1):points+=10000
-      elif(lv==2):points+=20000
-      elif(lv==3):points+-30000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
          
       lv+=1   
       print("\nLEVEL=",lv)
@@ -91,8 +93,9 @@ for choice in l:
 
      if(user3=="A"):
       if(lv==1):points+=10000
-      elif(lv==2):points+=20000
-      elif(lv==3):points+-30000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
          
       lv+=1
       print("\nLEVEL=",lv)
@@ -117,8 +120,9 @@ for choice in l:
      
      if(user4=="C"):
       if(lv==1):points+=10000
-      elif(lv==2):points+=20000
-      elif(lv==3):points+-30000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
          
       lv+=1   
       print("\nLEVEL=",lv)
