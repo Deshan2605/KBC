@@ -11,12 +11,15 @@ a="In the game of ludo the discs or tokens are of how many colours?"
 b="Which of these are names of national parks located in Madhya Pradesh?"
 c="Where was the BRICS summit held in 2014?"
 d="Who wrote the introduction to the English translation of Rabindranath Tagore's Gitanjali?"
-l=[str(a), str(b), str(c),str(d)]
+e="Which of these leaders was a recipient of a gallantry award in 1987 by a state government for saving two girls from drowning?"
+f="The wife of which of these famous sports persons was once captain of Indian volleyball team?"
+l=[str(a), str(b), str(c),str(d), str(e), str(f)]
 user1=""
 user2=""
 user3=""
 user4=""
-
+user5=""
+user6=""
 # SOME COMMENT ADDED
 
 for i in range(len(l)-1, 0, -1):
@@ -42,11 +45,13 @@ for choice in l:
       elif(lv==2):points+=10000
       elif(lv==3):points+=10000
       elif(lv==4):points+=10000
-         
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
+
       lv+=1   
       print("\nLEVEL=",lv)
       print("TOTAL POINTS=",points)
-      if(lv!=5):
+      if(lv!=7):
        print("\nYOUR NEXT QUESTION IS:-")
 
 
@@ -70,11 +75,13 @@ for choice in l:
       elif(lv==2):points+=10000
       elif(lv==3):points+=10000
       elif(lv==4):points+=10000
-         
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
+
       lv+=1   
       print("\nLEVEL=",lv)
       print("TOTAL POINTS=",points)
-      if(lv!=5):
+      if(lv!=7):
        print("\nYOUR NEXT QUESTION IS:-")
 
      else: 
@@ -96,11 +103,13 @@ for choice in l:
       elif(lv==2):points+=10000
       elif(lv==3):points+=10000
       elif(lv==4):points+=10000
-         
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
+
       lv+=1
       print("\nLEVEL=",lv)
       print("TOTAL POINTS=",points)  
-      if(lv!=5):
+      if(lv!=7):
        print("\nYOUR NEXT QUESTION IS:-")
 
      else: 
@@ -123,16 +132,67 @@ for choice in l:
       elif(lv==2):points+=10000
       elif(lv==3):points+=10000
       elif(lv==4):points+=10000
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
+
+      lv+=1   
+      print("\nLEVEL=",lv)
+      print("TOTAL POINTS=",points)
+      if(lv!=7):
+       print("\nYOUR NEXT QUESTION IS:-")
+     else: 
+        print("SORRY, YOUR ANSWER IS INCORRECT. BETTER LUCK NEXT TIME.")
+        print("YOUR TOTAL SCORE IS: ", points, "points")
+        break
+     
+   elif (choice==e):
+     print("(A) Anandiben Patel")
+     print("(B) Vasundhara Raje Scindia")
+     print("(C) Uma Bharti")
+     print("(D) Mamata Banerjee")
+     user5=input("ANSWER: ")
+     
+     if(user5=="A"):
+      if(lv==1):points+=10000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
          
       lv+=1   
       print("\nLEVEL=",lv)
       print("TOTAL POINTS=",points)
-      if(lv!=5):
+      if(lv!=7):
+       print("\nYOUR NEXT QUESTION IS:-")
+     else: 
+        print("SORRY, YOUR ANSWER IS INCORRECT. BETTER LUCK NEXT TIME.")
+        print("YOUR TOTAL SCORE IS: ", points, "points")
+        break
+   elif (choice==f):
+     print("(A) K.D.Jadav")
+     print("(B) Dhyan Chand")
+     print("(C) Prakash Padukone")
+     print("(D) Milkha Singh")
+     user6=input("ANSWER: ")
+     
+     if(user6=="D"):
+      if(lv==1):points+=10000
+      elif(lv==2):points+=10000
+      elif(lv==3):points+=10000
+      elif(lv==4):points+=10000
+      elif(lv==5):points+=10000
+      elif(lv==6):points+=10000
+         
+      lv+=1   
+      print("\nLEVEL=",lv)
+      print("TOTAL POINTS=",points)
+      if(lv!=7):
        print("\nYOUR NEXT QUESTION IS:-")
      else: 
         print("SORRY, YOUR ANSWER IS INCORRECT. BETTER LUCK NEXT TIME.")
         print("YOUR TOTAL SCORE IS: ", points, "points")
         break
 
-if(user1=="D" and user2=="B"and user3=="A"and user4=="C"):
-   print("Congratulations, you have won the game. Your total points are 40,000.")
+if(user1=="D" and user2=="B"and user3=="A"and user4=="C" and user5=="A" and user6=="D"):
+   print("Congratulations, you have won the game. Your total points are",points)
